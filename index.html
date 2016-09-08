@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.tianox.com/love/heart.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>佳慧我爱你</title>
+    <meta name="keywords" content="佳慧,卢佳慧,小苦力,52014么么,我爱你娇妹">
+	<link type="text/css" href="./common/default.css" rel="stylesheet">
+	<link rel="stylesheet" href="./common/style.css" type="text/css">
+	<style type="text/css">
+		#code {
+			float: left;
+			width: 440px;
+			height: 400px;
+			color: #FF2B2B;
+			font-family: "幼圆";
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body style="background:url(1472400286236.jpeg) no-repeat; background-size: 100%;">
+<div style="display:none">
+    
+    	
+    	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="./common/player.html"></iframe>
+    
+</div>
+<input type="hidden" id="loveDate" value="2016-08-26 00:00:00">
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code" style="margin-top: 112.5px;">
+				 <span class="space">小苦力：</span><br><span class="space"></span><br>
+				 <span class="space">我不能确定未来能否给你幸福，</span><br><span class="space"></span><br>
+				 <span class="space">但是我发誓，我会一直努力让你幸福</span><br><span class="space"></span><br>
+				 <span class="space">虽然我们相识不久，</span><br><span class="space">但是我真的很喜欢你，</span><br><span class="space">我们相聚每次都很短暂，</span><br><span class="space">却让我感到十分充实，</span><br><span class="space">抱着你，</span><br><span class="space">很踏实、很开心，</span><br><span class="space">不要那么在乎我的感受，</span><br><span class="space">你自己要开心点</span><br><span class="space">我不能在你身边</span><br><span class="space">照顾好你自己</span><br><span class="space">让你生气过、哭过</span><br><span class="space">我真的很内疚</span><br><span class="space">不过我还是想说</span><br><span class="space">I like you</span><br><span class="space">I miss you</span><br><span class="space">I want to be with you</span><br><span class="space">好吗</span><br><span class="space">
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
+					<div id="messages" style="display: block;">
+						记录我们相恋的日子
+						<div id="elapseClock"><span class="digit">12</span> 天 <span class="digit">5</span> 时 <span class="digit">30</span> 分 <span class="digit">05</span> 秒</div>
+					</div>
+					<div id="loveu" style="display: block;">
+							卢佳慧，I love you forever<br>
+						<div class="signature"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="watermark"></div>
+		
+	</div>
+	<div style="display: none">
+	<script src="./苦力我爱你_files/hm.js"></script><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1de51c7a10685de3e9dd75efe6bc84dc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
+		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256941446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256941446' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1256941446"><a href="http://www.cnzz.com/stat/website.php?web_id=1256941446" target="_blank" title="站长统计">站长统计</a></span><script src="./common/z_stat.php" type="text/javascript"></script><script src="./common/core.php" charset="utf-8" type="text/javascript"></script>
+	</div>
+
+<script type="text/javascript" src="./common/jquery.js"></script>
+<script type="text/javascript" src="./common/garden.js"></script>
+<script type="text/javascript" src="./common/functions.js"></script>
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date(Date.parse($("#loveDate").val().replace(/-/g,  "/"))); 
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "亲爱的，你的浏览器不支持HTML5!看不了网站效果<br/>"+
+	"请使用以下浏览器 Chrome 14+IE 9+/Firefox 7+/Safari 4+/Opera 10+<br/>"+
+	"如果没有以上浏览器，<br/>";
+	document.body.appendChild(msg);
+    document.execCommand("stop");
+} else {
+	$("#code").css("display", "");
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+
+	</body></html>
